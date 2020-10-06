@@ -1,7 +1,15 @@
-.title{
+.logo{
   font-family:Roboto;
 }
 
-.title-pt{
+.menu{
+  font-family:PTSerif
+}
+
+.main-section{
   font-family:PTSerif;
+}
+
+.main-content__title{
+  font-family:Roboto;
 }
