@@ -7,34 +7,54 @@
   justify-content: space-between;
 }
 .logo{
+  position:relative;
   padding: 40px 0;
-  font-family: Roboto;
+  padding-left: 44px;
+  font: 700 24px/31px pt_serif, arial, helvetica, sans-serif;
+}
+.logo__circle{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  opacity: .7;
+}
+.logo__circle_color_blue{
+  left: 8px;
+  top: 56%;
+  background: #C8DBFB;
+}
+.logo__circle_color_dark-blue{
+  background: #0056EC;
 }
 .menu{
   display: flex;
   align-items: center;
-  font-family: PTSerif;
 }
 .menu__item{
   padding: 0 13px;
+  font:400 18px/21.09px Roboto, arial, helvetica, sans-serif;
 }
 .menu__item:last-child{
   padding-right: 0;
 }
 .main-section{
-  font-family: PTSerif;
+  /* foo */
 }
 .main-content{
   /* foo */
 }
 .main-content__title{
-  /* foo */
+  font: 700 66px/85.4px pt_serif, arial, helvetica, sans-serif;
 }
 .main-content__subtitle{
-font-family: Roboto;
+  font: 400 22px/25.78px Roboto, arial, helvetica, sans-serif;
 }
 .main-content__button{
-  /* foo */
+  font: 500 18px/21.09px Roboto, arial, helvetica, sans-serif;
 }
 .image-content{
   /* foo */
