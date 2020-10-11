@@ -10,6 +10,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  border: dashed 1px blue;
 }
 
 .logo {
@@ -51,11 +52,16 @@ body {
   font: 500 18px/21px roboto, arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
+  cursor: pointer;
   transition: opacity 0.5s;
 }
 
 .menu__item:last-child {
   margin-right: 0;
+}
+
+.menu__item:hover {
+  opacity: 0.5;
 }
 
 .menu__item::after {
@@ -68,10 +74,6 @@ body {
   background: #0056ec;
   opacity: 0;
   transition: opacity 0.5s, width 0.5s;
-}
-
-.menu__item:hover {
-  opacity: 0.5;
 }
 
 .menu__item:hover::after {
@@ -90,7 +92,7 @@ body {
   content: '';
   width: 100%;
   height: 3px;
-  background: #0056EC;
+  background: #0056ec;
   opacity: 0;
   transition: opacity 0.5s;
 }
@@ -102,38 +104,34 @@ body {
   left: 0;
   width: 100%;
   height: 3px;
-  background: #0056EC;
+  background: #0056ec;
 }
 
-.menu__item:hover::after, .menu__item_active::after {
+.menu__item_active::after,
+.menu__item:hover::after {
   opacity: 1;
   width: 100%;
 }
 
-.main-section {
-  /* foo */
+.main {
+  border: dashed 2px purple;
+  padding-top: 100px;
+  padding-right: 63%
+  background-image: url('img/mainimage.svg');
 }
 
-.main-content {
-  /* foo */
+.main__title {
+  border: dashed 1px red;
+  margin: 0 0 40px 0;
+  font: 700 50px/65px pt_serif, arial, helvetica, sans-serif;
 }
 
-.main-content__title {
-  font: 700 66px/85.4px pt_serif, arial, helvetica, sans-serif;
+.main__subtitle {
+  border: dashed 1px green;
+  margin: 0 0 41 0px;
+  font: 500 18px/21px roboto, arial, helvetica, sans-serif;
 }
 
-.main-content__subtitle {
-  font: 400 22px/25.78px roboto, arial, helvetica, sans-serif;
-}
-
-.main-content__button {
-  font: 500 18px/21.09px roboto, arial, helvetica, sans-serif;
-}
-
-.image-content {
-  /* foo */
-}
-
-.image-content__image {
-  /* foo */
+.main__button {
+  font: 500 14px/16px roboto, arial, helvetica, sans-serif;
 }
