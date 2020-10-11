@@ -114,7 +114,6 @@ body {
 }
 
 .main {
-  padding-top: 100px;
   padding: 0 63% 100px 0;
   background-image: url('img/mainimage.svg');
   background-repeat: no-repeat;
@@ -126,9 +125,10 @@ body {
   font: 700 50px/65px pt_serif, arial, helvetica, sans-serif;
 }
 
-.main__title-text_highlight{
+.main__title-text_highlight {
   background: #ecf3ff;
 }
+
 .main__subtitle {
   margin: 0 15% 41px 0;
   font: 500 18px/21px roboto, arial, helvetica, sans-serif;
