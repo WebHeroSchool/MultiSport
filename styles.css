@@ -14,6 +14,7 @@ body {
 }
 
 .logo {
+  display: inline-block;
   position: relative;
   padding: 40px 0;
   padding-left: 44px;
@@ -22,6 +23,7 @@ body {
 
 .logo__circle {
   position: absolute;
+  //padding: 40px 0;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -130,7 +132,7 @@ body {
 }
 
 .main__subtitle {
-  margin: 0 15% 41px 0;
+  margin: 0 0 41px 0;
   font: 500 18px/21px roboto, arial, helvetica, sans-serif;
 }
 
