@@ -19,11 +19,11 @@ body {
   padding: 40px 0;
   padding-left: 44px;
   font: 700 24px/31px pt_serif, arial, helvetica, sans-serif;
+  border: dashed 1px red;
 }
 
 .logo__circle {
   position: absolute;
-  //padding: 40px 0;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
