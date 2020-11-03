@@ -1,16 +1,108 @@
+/* Desktops 1920px */
+@media (max-width: 1920px) {
+  .wrapper {
+    width: 79%;
+  }
+
+  .header {
+    margin-bottom: 131px;
+  }
+
+  .logo {
+    padding: 40px 0;
+    padding-left: 44px;
+    font: 700 24px/31px pt_serif, arial, helvetica, sans-serif;
+  }
+
+  .menu__item {
+    margin-right: 25px;
+    font: 500 18px/21px roboto, arial, helvetica, sans-serif;
+  }
+
+  .main {
+    padding: 15px 58% 100px 0;
+    background-size: 50%;
+  }
+
+  .main__title {
+    margin: 63px 0 40px 0;
+    font: 700 66px/85px pt_serif, arial, helvetica, sans-serif;
+  }
+
+  .main__subtitle {
+    margin: 0 30% 43px 0;
+    font: 500 22px/26px roboto, arial, helvetica, sans-serif;
+  }
+
+  .main__button {
+    font: 500 18px/21px roboto, arial, helvetica, sans-serif;
+  }
+}
+
+/* Desktops */
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 91%;
+  }
+
+  .header {
+    margin-bottom:85px;
+  }
+
+  .logo {
+    padding: 40px 0;
+    padding-left: 44px;
+    font: 700 24px/31px pt_serif, arial, helvetica, sans-serif;
+  }
+
+  .menu__item {
+    margin-right: 26px;
+  }
+
+  .main {
+    padding: 15px 58% 100px 0;
+  }
+
+  .main__title {
+    margin-bottom: 40px;
+    font: 700 50px/65px pt_serif, arial, helvetica, sans-serif;
+  }
+
+  .main__subtitle {
+    margin-bottom: 41px;
+    font: 500 18px/21px roboto, arial, helvetica, sans-serif;
+  }
+
+  .main__button {
+    font: 500 14px/16px roboto, arial, helvetica, sans-serif;
+  }
+}
+
+/* Tablets and Desktops */
+@media (min-width: 769px) {
+  .burger-menu {
+    display: none;
+  }
+}
+
 /* Mobile Devices */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
+  .wrapper {
+    width: 88%;
+  }
+
   .menu {
     display: none;
   }
 
   .header {
+    margin-bottom: 16px;
     position: relative;
-    margin-bottom: 28px;
   }
 
   .logo {
-    padding: 40px 0 0 0;
+    padding: 24px 0 35px 0;
+    padding-left: 44px;
   }
 
   .logo__title {
@@ -20,17 +112,19 @@
 
   .main {
     text-align: center;
-    padding: 74% 0 0;
-    background-size: 74%;
+    padding: 79% 0 0 0;
+    background-size: 85%;
     background-position: top center;
   }
 
   .main__title {
-    margin-bottom: 44px;
+    padding: 0 0 0 7px;
+    margin-bottom: 34px;
     font: 700 30px/39px pt_serif, arial, helvetica, sans-serif;
   }
 
   .main__subtitle {
+    padding: 0 14%;
     margin-bottom: 25px;
     font: 500 16px/19px roboto, arial, helvetica, sans-serif;
   }
@@ -39,9 +133,8 @@
     font: 500 14px/16px roboto, arial, helvetica, sans-serif;
   }
 
-  /* Hamburger Menu Style */
-
-  #menu__toggle {
+  /* Burger Menu Style */
+  #checkbox {
     opacity: 0;
   }
 
@@ -50,46 +143,48 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    right: 0;
     top: 30%;
+    right: 0;
     width: 25px;
-    height: 17px;
+    height: 23px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 3;
   }
 
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
+  .menu__btn_line,
+  .menu__btn_line::before,
+  .menu__btn_line::after {
     display: block;
     position: absolute;
-    width: 100%;
+    top: 50%;
+    right: 0;
+    width: 25px;
     height: 3px;
     background-color: #0056ec;
     transition-duration: 0.25s;
+    z-index: 2;
   }
 
-  .menu__btn > span::before {
+  .menu__btn_line::before {
     content: '';
     top: -7px;
   }
 
-  .menu__btn > span::after {
+  .menu__btn_line::after {
     content: '';
     top: 7px;
   }
 
-
-  #menu__toggle:checked ~ .menu__btn > span {
+  #checkbox:checked ~ .menu__btn_line {
     transform: rotate(45deg);
   }
 
-  #menu__toggle:checked ~ .menu__btn > span::before {
+  #checkbox:checked ~ .menu__btn_line::before {
     top: 0;
     transform: rotate(0);
   }
 
-  #menu__toggle:checked ~ .menu__btn > span::after {
+  #checkbox:checked ~ .menu__btn_line::after {
     top: 0;
     transform: rotate(90deg);
   }
@@ -105,29 +200,30 @@
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 186px 0;
-    list-style: none;
+    padding: 180px 0;
     background-color: #fff;
-    transition-duration: 0.5s;
+    transition: 0.5s;
+    z-index: 1;
   }
 
-  #menu__toggle:checked ~ .menu__box {
+  #checkbox:checked ~ .menu__box {
     visibility: visible;
     right: 0;
   }
 
   .menu__item {
     display: block;
-    padding: 0 0 24px 0;
+    padding: 0 0 25px 0;
+    margin-right: 0;
     color: #000;
     font: 500 30px/35px roboto, arial, helvetica, sans-serif;
     text-decoration: none;
   }
 }
 
-/* Tablets and Desktops */
-@media (min-width: 768px) {
-  .burger-menu {
-    display: none;
+/* for rotated mobiles */
+@media (max-height: 414px) {
+  .menu__box {
+    padding: 6% 0 0 0;
   }
 }
