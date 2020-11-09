@@ -4,13 +4,13 @@ body {
 
 .wrapper {
   margin: auto;
-  width: 68%;
+  width: 79%;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 85px;
+  margin-bottom: 131px;
 }
 
 .logo {
@@ -49,8 +49,8 @@ body {
 
 .menu__item {
   position: relative;
-  margin-right: 27px;
-  font: 500 14px/16px roboto, arial, helvetica, sans-serif;
+  margin-right: 25px;
+  font: 500 18px/21px roboto, arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -119,11 +119,12 @@ body {
   background-image: url('img/mainimage.svg');
   background-repeat: no-repeat;
   background-position: top right;
+  background-size: 50%;
 }
 
 .main__title {
-  margin: 0 0 40px 0;
-  font: 700 50px/65px pt_serif, arial, helvetica, sans-serif;
+  margin: 63px 0 40px 0;
+  font: 700 66px/85px pt_serif, arial, helvetica, sans-serif;
 }
 
 .main__title-text_highlight {
@@ -131,13 +132,13 @@ body {
 }
 
 .main__subtitle {
-  margin: 0 0 41px 0;
-  font: 500 18px/21px roboto, arial, helvetica, sans-serif;
+  margin: 0 30% 43px 0;
+  font: 500 22px/26px roboto, arial, helvetica, sans-serif;
 }
 
 .main__button {
   display: inline-block;
-  font: 500 14px/16px roboto, arial, helvetica, sans-serif;
+  font: 500 18px/21px roboto, arial, helvetica, sans-serif;
   color: #fff;
   background: #0056ec;
   padding: 14px 16px;
