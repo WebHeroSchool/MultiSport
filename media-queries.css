@@ -225,6 +225,7 @@
   .menu__item:last-child {
     padding: 0 6px 0 0;
 }
+}
 
 /* for rotated mobiles */
 @media (max-height: 414px) {
