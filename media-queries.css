@@ -233,3 +233,53 @@
     padding: 6% 0 0 0;
   }
 }
+
+/*  Mobile Iphone 5 */
+@media (max-width: 320px) {
+  .wrapper {
+    width: 82%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .header {
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .logo {
+    padding: 43px 0 35px 0;
+    padding-left: 44px;
+  }
+
+  .logo__title {
+    border: dashed 1px red;
+    display: none;
+  }
+
+  .main {
+    text-align: center;
+    padding: 77% 0 0 0;
+    background-size: 85%;
+    background-position: top center;
+  }
+
+  .main__title {
+    padding: 0 0 0 7px;
+    margin-bottom: 22px;
+    font: 700 30px/39px pt_serif, arial, helvetica, sans-serif;
+  }
+
+  .main__subtitle {
+    padding: 0;
+    margin-bottom: 20px;
+    font: 500 16px/19px roboto, arial, helvetica, sans-serif;
+  }
+
+  .main__button {
+    padding: 4% 6%;
+    font: 500 14px/16px roboto, arial, helvetica, sans-serif;
+  }
+}
