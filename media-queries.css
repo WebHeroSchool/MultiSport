@@ -125,7 +125,7 @@
   }
 
   .main__subtitle {
-    padding: 0 10%;
+    padding: 0 4px 0 43px;
     margin-bottom: 25px;
     font: 500 16px/19px roboto, arial, helvetica, sans-serif;
   }
@@ -255,7 +255,6 @@
   }
 
   .logo__title {
-    border: dashed 1px red;
     display: none;
   }
 
